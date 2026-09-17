@@ -1,0 +1,9 @@
+{
+  "timestamp": "20260917_153306",
+  "vae_threshold": 0.7482303380966187,
+  "total_known": 1058,
+  "total_known_blocked": 10,
+  "total_known_verified": 1048,
+  "full_accuracy": 0.9404536862003781,
+  "verify_accuracy": 0.941793893129771
+}
