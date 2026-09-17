@@ -1,0 +1,13 @@
+# Raw data - too large for git, not reproducible from repo anyway
+data/raw/
+data/reference/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS clutter
+.DS_Store
+Thumbs.db

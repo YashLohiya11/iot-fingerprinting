@@ -1,0 +1,85 @@
+{
+  "timestamp": "20260917_144006",
+  "dwt": {
+    "val_accuracy": 0.9262371615312792,
+    "val_f1_macro": 0.9335421905561139,
+    "test_accuracy": 0.9343955014058107,
+    "test_f1_macro": 0.939783420051166,
+    "per_class": {
+      "AmazonEcho": {
+        "precision": 0.9289340101522843,
+        "recall": 0.8970588235294118,
+        "f1": 0.912718204488778,
+        "support": 204
+      },
+      "BelkinWemoMotionSensor": {
+        "precision": 0.9336283185840708,
+        "recall": 0.9976359338061466,
+        "f1": 0.9645714285714285,
+        "support": 423
+      },
+      "PhilipsHue": {
+        "precision": 0.9282700421940928,
+        "recall": 0.9090909090909091,
+        "f1": 0.918580375782881,
+        "support": 242
+      },
+      "SamsungCamera": {
+        "precision": 0.9476744186046512,
+        "recall": 0.8624338624338624,
+        "f1": 0.9030470914127424,
+        "support": 189
+      },
+      "TPLinkSmartPlug": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 9
+      }
+    }
+  },
+  "raw": {
+    "val_accuracy": 0.9831932773109243,
+    "val_f1_macro": 0.9865727187777102,
+    "test_accuracy": 0.993439550140581,
+    "test_f1_macro": 0.9938233394643061,
+    "per_class": {
+      "AmazonEcho": {
+        "precision": 1.0,
+        "recall": 0.9754901960784313,
+        "f1": 0.9875930521091811,
+        "support": 204
+      },
+      "BelkinWemoMotionSensor": {
+        "precision": 0.9976359338061466,
+        "recall": 0.9976359338061466,
+        "f1": 0.9976359338061466,
+        "support": 423
+      },
+      "PhilipsHue": {
+        "precision": 0.983739837398374,
+        "recall": 1.0,
+        "f1": 0.9918032786885246,
+        "support": 242
+      },
+      "SamsungCamera": {
+        "precision": 0.9894736842105263,
+        "recall": 0.9947089947089947,
+        "f1": 0.9920844327176781,
+        "support": 189
+      },
+      "TPLinkSmartPlug": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "support": 9
+      }
+    }
+  },
+  "config": {
+    "n_estimators": 100,
+    "max_depth": null,
+    "min_samples_leaf": 1,
+    "seed": 42
+  }
+}

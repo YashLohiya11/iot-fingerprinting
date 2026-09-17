@@ -1,0 +1,30 @@
+classifier:
+  max_depth: null
+  min_samples_leaf: 1
+  n_estimators: 100
+dataset:
+  date_end: '2016-11-25'
+  date_start: '2016-11-22'
+  device_subset:
+  - AmazonEcho
+  - BelkinWemoMotionSensor
+  - PhilipsHue
+  - SamsungCamera
+  - TPLinkSmartPlug
+  random_seed: 42
+features:
+  decomposition_level: 3
+  wavelet_family: db4
+preprocessing:
+  iat_transform: log1p
+  pad_incomplete_windows: false
+  time_block_hours: 1
+  window_size: 128
+  window_step: 128
+splits:
+  test_ratio: 0.15
+  train_ratio: 0.7
+  val_ratio: 0.15
+vae:
+  latent_dim: 16
+  threshold_percentile: 99

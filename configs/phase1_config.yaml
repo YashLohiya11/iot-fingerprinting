@@ -1,0 +1,35 @@
+dataset:
+  device_subset:
+    - "AmazonEcho"
+    - "BelkinWemoMotionSensor"
+    - "PhilipsHue"
+    - "SamsungCamera"
+    - "TPLinkSmartPlug"
+  date_start: "2016-11-22"
+  date_end: "2016-11-25"  # exclusive — covers Nov 22, 23, 24
+  random_seed: 42
+
+preprocessing:
+  iat_transform: "log1p"  # log(1 + IAT) — fixed function, no data-derived params
+  window_size: 128
+  window_step: 128
+  pad_incomplete_windows: false
+  time_block_hours: 1  # session/time-block size for split-safe grouping
+
+features:
+  wavelet_family: "db4"
+  decomposition_level: 3
+
+splits:
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+
+classifier:
+  n_estimators: 100
+  max_depth: null
+  min_samples_leaf: 1
+
+vae:
+  latent_dim: 16
+  threshold_percentile: 99
